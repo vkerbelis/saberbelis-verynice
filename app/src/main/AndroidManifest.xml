@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.saberbelis.verynice">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/i_see_lancher"
+        android:label="@string/ep_neim"
+        android:roundIcon="@mipmap/i_see_lancher_rund"
+        android:supportsRtl="true"
+        android:theme="@style/EpusThemus">
+        <activity
+            android:name="com.saberbelis.verynice.MejnAktivus"
+            android:label="@string/ep_neim"
+            android:theme="@style/EpusThemus.NousEkshionBarus">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

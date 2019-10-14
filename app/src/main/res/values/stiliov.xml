@@ -1,0 +1,20 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="EpusThemus" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/kolorus_primerus</item>
+        <item name="colorPrimaryDark">@color/kolorus_primerus_darkus_maximus</item>
+        <item name="colorAccent">@color/kolorus_akcentus</item>
+    </style>
+
+    <style name="EpusThemus.NousEkshionBarus">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="EpusThemus.AppusBarusOverlejus" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <style name="EpusThemus.PopupusOverlejus" parent="ThemeOverlay.AppCompat.Light"/>
+
+</resources>

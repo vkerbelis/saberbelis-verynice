@@ -1,0 +1,10 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.saberbelis.verynice.MejnAktivus">
+    <item
+        android:id="@+id/akšion_setyng"
+        android:orderInCategory="100"
+        android:title="@string/akshion_setyng"
+        app:showAsAction="never"/>
+</menu>
