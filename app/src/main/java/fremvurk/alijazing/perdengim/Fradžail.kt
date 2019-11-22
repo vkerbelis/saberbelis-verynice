@@ -3,7 +3,7 @@
     "LocalVariableName", "PropertyName", "PackageName"
 )
 
-package com.saberbelis.verynice.fradžails
+package fremvurk.alijazing.perdengim
 
 import android.os.Bundle
 import android.support.v4.app.Fragment

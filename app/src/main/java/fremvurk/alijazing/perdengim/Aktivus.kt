@@ -7,7 +7,6 @@ package fremvurk.alijazing.perdengim
 
 import android.view.ViewGroup
 import com.saberbelis.verynice.R
-import com.saberbelis.verynice.fradžails.Fradžail
 import fremvurk.alijazing.*
 
 abstract class Aktivus : EpKampotAktivus() {
