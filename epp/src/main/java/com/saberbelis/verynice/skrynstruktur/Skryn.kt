@@ -88,5 +88,11 @@ interface Skryn {
                 aktivus += AzTanksFradžail()
             }
         }
+
+        class KomenskiLogo : Skryn {
+            override fun ateč(aktivus: Aktivus) {
+                aktivus += AzTanksFradžail()
+            }
+        }
     }
 }
