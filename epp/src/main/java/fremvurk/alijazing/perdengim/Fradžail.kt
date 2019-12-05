@@ -6,14 +6,14 @@
 package fremvurk.alijazing.perdengim
 
 import android.os.Bundle
-import android.support.v4.app.Fragment
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import fremvurk.alijazing.Bandūl
 import fremvurk.alijazing.Vju
 
-abstract class Fradžail : Fragment() {
+abstract class Fradžail : androidx.fragment.app.Fragment() {
     abstract val fradžailLėjaut: Int
 
     override fun onCreateView(
