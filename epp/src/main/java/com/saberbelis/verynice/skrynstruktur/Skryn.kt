@@ -7,6 +7,7 @@ package com.saberbelis.verynice.skrynstruktur
 
 import android.annotation.SuppressLint
 import com.saberbelis.verynice.fradžails.AzTanksFradžail
+import com.saberbelis.verynice.fradžails.BassImplFradžail
 import fremvurk.alijazing.Strindž
 import fremvurk.alijazing.perdengim.Aktivus
 import fremvurk.alijazing.perdengim.plusAssign
@@ -20,39 +21,39 @@ interface Skryn {
             .toLowerCase(Locale.ROOT)
             .capitalize()
 
-    fun ateč(aktivus: Aktivus)
+    fun slapp(aktivus: Aktivus)
 
     object Impl {
         class AzTanks : Skryn {
             override val tytel: Strindž
                 get() = super.tytel + "! Sorry, this is sacred - no screwing around here"
 
-            override fun ateč(aktivus: Aktivus) {
+            override fun slapp(aktivus: Aktivus) {
                 aktivus += AzTanksFradžail()
             }
         }
 
         class KaušinGeim : Skryn {
-            override fun ateč(aktivus: Aktivus) {
-                aktivus += AzTanksFradžail()
+            override fun slapp(aktivus: Aktivus) {
+                aktivus += BassImplFradžail(tytel)
             }
         }
 
         class TaipReiser : Skryn {
-            override fun ateč(aktivus: Aktivus) {
-                aktivus += AzTanksFradžail()
+            override fun slapp(aktivus: Aktivus) {
+                aktivus += BassImplFradžail(tytel)
             }
         }
 
         class VerkOnRandoumaizerProžekt : Skryn {
-            override fun ateč(aktivus: Aktivus) {
-                aktivus += AzTanksFradžail()
+            override fun slapp(aktivus: Aktivus) {
+                aktivus += BassImplFradžail(tytel)
             }
         }
 
         class GoHaumJurDrunk : Skryn {
-            override fun ateč(aktivus: Aktivus) {
-                aktivus += AzTanksFradžail()
+            override fun slapp(aktivus: Aktivus) {
+                aktivus += BassImplFradžail(tytel)
             }
         }
 
@@ -60,8 +61,8 @@ interface Skryn {
             override val tytel: Strindž
                 get() = super.tytel.toUpperCase()
 
-            override fun ateč(aktivus: Aktivus) {
-                aktivus += AzTanksFradžail()
+            override fun slapp(aktivus: Aktivus) {
+                aktivus += BassImplFradžail(tytel)
             }
         }
 
@@ -69,8 +70,8 @@ interface Skryn {
             override val tytel: Strindž
                 get() = "Le0rn new konspet"
 
-            override fun ateč(aktivus: Aktivus) {
-                aktivus += AzTanksFradžail()
+            override fun slapp(aktivus: Aktivus) {
+                aktivus += BassImplFradžail(tytel)
             }
         }
 
@@ -78,20 +79,20 @@ interface Skryn {
             override val tytel: Strindž
                 get() = "YouTube n' Chill"
 
-            override fun ateč(aktivus: Aktivus) {
-                aktivus += AzTanksFradžail()
+            override fun slapp(aktivus: Aktivus) {
+                aktivus += BassImplFradžail(tytel)
             }
         }
 
         class RollAgain : Skryn {
-            override fun ateč(aktivus: Aktivus) {
-                aktivus += AzTanksFradžail()
+            override fun slapp(aktivus: Aktivus) {
+                aktivus += BassImplFradžail(tytel)
             }
         }
 
         class KomenskiLogo : Skryn {
-            override fun ateč(aktivus: Aktivus) {
-                aktivus += AzTanksFradžail()
+            override fun slapp(aktivus: Aktivus) {
+                aktivus += BassImplFradžail(tytel)
             }
         }
     }

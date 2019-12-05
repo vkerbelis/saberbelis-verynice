@@ -46,7 +46,7 @@ class MejnAktivus : Aktivus(), MejnVju {
                 belenką.tytel,
                 Snekbar.LENGTH_LONG
             ).šou()
-            belenką.ateč(this)
+            belenką.slapp(this)
         }
     }
 
