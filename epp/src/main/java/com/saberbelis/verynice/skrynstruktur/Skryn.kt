@@ -29,7 +29,7 @@ interface Skryn {
                 get() = super.tytel + "! Sorry, this is sacred - no screwing around here"
 
             override fun slapp(aktivus: Aktivus) {
-                aktivus += AzTanksFradžail()
+                aktivus += AzTanksFradžail(tytel)
             }
         }
 

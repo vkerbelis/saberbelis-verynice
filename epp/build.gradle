@@ -4,6 +4,8 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
+apply from: '../sabach.gradle'
+
 android {
     compileSdkVersion 29
     defaultConfig {

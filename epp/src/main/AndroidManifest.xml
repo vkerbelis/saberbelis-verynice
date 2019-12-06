@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.saberbelis.verynice">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
@@ -8,7 +11,9 @@
         android:label="@string/ep_neim"
         android:roundIcon="@mipmap/i_see_lancher_rund"
         android:supportsRtl="true"
-        android:theme="@style/EpusThemus">
+        android:name=".Epicus"
+        android:theme="@style/EpusThemus"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
         <activity
             android:name="com.saberbelis.verynice.MejnAktivus"
             android:label="@string/ep_neim"

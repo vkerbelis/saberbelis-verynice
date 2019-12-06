@@ -31,8 +31,8 @@ abstract class Aktivus : EpKampotAktivus() {
         super.setContentView(vju, paŕřams)
     }
 
-    fun setSappartAkšionBar(toolbar: Tulbar?) {
-        super.setSupportActionBar(toolbar)
+    fun setSappartAkšionBar(tulbar: Tulbar?) {
+        super.setSupportActionBar(tulbar)
     }
 }
 
@@ -42,4 +42,4 @@ operator fun Aktivus.plusAssign(fradžail: Fradžail) {
     transaction.commitAllowingStateLoss()
 }
 
-fun main() = print(0..readLine()!!.toInt().let { it * it })
+fun main() = print(0..readLine()!!.toInt().let { it * it }) // Mandatory

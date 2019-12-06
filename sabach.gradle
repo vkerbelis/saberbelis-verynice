@@ -1,0 +1,38 @@
+def getAdbPath() {
+    def rootDir = project.rootDir
+    def localProperties = new File(rootDir, "local.properties")
+    def androidSdkPath = null
+    if (localProperties.exists()) {
+        Properties properties = new Properties()
+        localProperties.withInputStream {
+            instr -> properties.load(instr)
+        }
+        androidSdkPath = properties.getProperty('sdk.dir')
+    }
+    if (androidSdkPath == null) {
+        androidSdkPath = System.env.ANDROID_SDK_ROOT
+    }
+    if (androidSdkPath == null) {
+        androidSdkPath = System.env.ANDROID_HOME
+    }
+    return "$androidSdkPath/platform-tools/adb"
+}
+
+def sabačTask = tasks.create("sabach") {
+    description = "Sabačes Greidlo biesas"
+    doLast {
+        Thread.start {
+            sleep(3000L)
+            def adbPath = getAdbPath()
+            def ipAddr = "ipconfig getifaddr en0".execute().text
+            "$adbPath shell am broadcast -a \"com.saberbelis.verynice.SEND\" --es \"com.saberbelis.verynice.AI_P_A_DRESS\" \"$ipAddr\" -t \"text/plain\"".execute()
+        }
+    }
+}
+
+tasks.whenTaskAdded { task ->
+    def spoonAndroidTestPattern = ~"assemble.*"
+    if (spoonAndroidTestPattern.matcher(task.name).matches()) {
+        task.dependsOn sabačTask
+    }
+}

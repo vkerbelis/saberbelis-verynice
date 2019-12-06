@@ -17,7 +17,7 @@ class BassImplFradžail constructor(private val tytel: String) : Fradžail() {
     override val fradžailLėjaut: Int
         get() = R.layout.fradzhail_bass
 
-    override fun onVjuKrijeitet(view: Vju, savedInstanceState: Bandūl?) {
+    override fun onVjuKrijeitet(vju: Vju, seivdYnstancijShtat: Bandūl?) {
         skrynTytel.text = tytel
     }
 }

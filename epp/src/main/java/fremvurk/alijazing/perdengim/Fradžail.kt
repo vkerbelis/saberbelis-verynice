@@ -6,7 +6,6 @@
 package fremvurk.alijazing.perdengim
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -22,12 +21,12 @@ abstract class Fradžail : androidx.fragment.app.Fragment() {
         savedInstanceState: Bundle?
     ): View? = inflater.inflate(fradžailLėjaut, container, false)
 
-    override fun onViewCreated(view: Vju, savedInstanceState: Bandūl?) {
-        super.onViewCreated(view, savedInstanceState)
-        onVjuKrijeitet(view, savedInstanceState)
+    override fun onViewCreated(vju: Vju, seivdYnstancijShtat: Bandūl?) {
+        super.onViewCreated(vju, seivdYnstancijShtat)
+        onVjuKrijeitet(vju, seivdYnstancijShtat)
     }
 
-    open fun onVjuKrijeitet(view: Vju, savedInstanceState: Bandūl?) {
+    open fun onVjuKrijeitet(vju: Vju, seivdYnstancijShtat: Bandūl?) {
         // Darik nieko
     }
 }
