@@ -13,6 +13,8 @@ import fremvurk.alijazing.perdengim.Aktivus
 import fremvurk.alijazing.perdengim.plusAssign
 import java.util.*
 
+typealias Skrny = Skryn
+
 @SuppressLint("DefaultLocale")
 interface Skryn {
     val tytel: Strindž
@@ -93,6 +95,12 @@ interface Skryn {
         class KomenskiLogo : Skryn {
             override fun slapp(aktivus: Aktivus) {
                 aktivus += BassImplFradžail(tytel)
+            }
+        }
+
+        fun BūbleTrūble(): Skryn = object : Skrny {
+            override fun slapp(aktivus: Aktivus) {
+                aktivus += BassImplFradžail("BūbleTrūble")
             }
         }
     }
