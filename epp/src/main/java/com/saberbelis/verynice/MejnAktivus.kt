@@ -29,7 +29,8 @@ class MejnAktivus : Aktivus(), MejnVju {
             Skryn.Impl.YouTubeTMnChill(),
             Skryn.Impl.RollAgain(),
             Skryn.Impl.KomenskiLogo(),
-            Skryn.Impl.BūbleTrūble()
+            Skryn.Impl.BūbleTrūble(),
+            Skryn.Impl.DoMicrosoftWindowsXPGame()
         )
     }
 

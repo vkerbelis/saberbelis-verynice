@@ -98,6 +98,12 @@ interface Skryn {
             }
         }
 
+        class DoMicrosoftWindowsXPGame : Skryn {
+            override fun slapp(aktivus: Aktivus) {
+                aktivus += BassImplFradžail(tytel)
+            }
+        }
+
         fun BūbleTrūble(): Skryn = object : Skrny {
             override fun slapp(aktivus: Aktivus) {
                 aktivus += BassImplFradžail("BūbleTrūble")
