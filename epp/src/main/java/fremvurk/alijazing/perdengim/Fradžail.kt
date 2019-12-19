@@ -1,6 +1,6 @@
 @file:Suppress(
     "SpellCheckingInspection", "FunctionName", "NonAsciiCharacters", "ClassName",
-    "LocalVariableName", "PropertyName", "PackageName"
+    "LocalVariableName", "PropertyName", "PackageName", "SetTextI18n", "ObjectPropertyName"
 )
 
 package fremvurk.alijazing.perdengim
@@ -27,6 +27,15 @@ abstract class Fradžail : androidx.fragment.app.Fragment() {
     }
 
     open fun onVjuKrijeitet(vju: Vju, seivdYnstancijShtat: Bandūl?) {
-        // Darik nieko
+        // Darik nėko
+    }
+
+    override fun onDestroyView() {
+        onDistrojVju()
+        super.onDestroyView()
+    }
+
+    open fun onDistrojVju() {
+        // Darik nėko
     }
 }

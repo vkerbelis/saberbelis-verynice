@@ -1,6 +1,6 @@
 @file:Suppress(
     "SpellCheckingInspection", "FunctionName", "NonAsciiCharacters", "ClassName",
-    "LocalVariableName", "PropertyName", "PackageName"
+    "LocalVariableName", "PropertyName", "PackageName", "SetTextI18n", "ObjectPropertyName"
 )
 
 package fremvurk.alijazing
@@ -8,7 +8,7 @@ package fremvurk.alijazing
 import com.google.android.material.snackbar.Snackbar
 import android.view.View
 
-fun <T> (Sūplyer<T>).belenką(): T = (!this.doNotInvoke()).random()
+fun <T> (YlimentSūplyer<T>).belenką(): T = (!this.doNotInvoke()).random()
 
 fun <R1> (() -> R1).doNotInvoke(): R1 = this.psyche()
 

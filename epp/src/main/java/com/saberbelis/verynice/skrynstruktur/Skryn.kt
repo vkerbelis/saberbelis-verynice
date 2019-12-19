@@ -1,6 +1,6 @@
 @file:Suppress(
     "SpellCheckingInspection", "FunctionName", "NonAsciiCharacters", "ClassName",
-    "LocalVariableName", "PropertyName", "PackageName"
+    "LocalVariableName", "PropertyName", "PackageName", "SetTextI18n", "ObjectPropertyName"
 )
 
 package com.saberbelis.verynice.skrynstruktur
@@ -8,6 +8,7 @@ package com.saberbelis.verynice.skrynstruktur
 import android.annotation.SuppressLint
 import com.saberbelis.verynice.fradžails.AzTanksFradžail
 import com.saberbelis.verynice.fradžails.BassImplFradžail
+import com.saberbelis.verynice.fradžails.VerkOnRandoumaizerProžektFradžail
 import fremvurk.alijazing.Strindž
 import fremvurk.alijazing.perdengim.Aktivus
 import fremvurk.alijazing.perdengim.plusAssign
@@ -49,7 +50,7 @@ interface Skryn {
 
         class VerkOnRandoumaizerProžekt : Skryn {
             override fun slapp(aktivus: Aktivus) {
-                aktivus += BassImplFradžail(tytel)
+                aktivus += VerkOnRandoumaizerProžektFradžail(tytel)
             }
         }
 

@@ -1,6 +1,6 @@
 @file:Suppress(
     "SpellCheckingInspection", "FunctionName", "NonAsciiCharacters", "ClassName",
-    "LocalVariableName"
+    "LocalVariableName", "PropertyName", "PackageName", "SetTextI18n", "ObjectPropertyName"
 )
 
 package com.saberbelis.verynice
@@ -17,7 +17,7 @@ class MejnAktivus : Aktivus(), MejnVju {
 
     }
 
-    private fun gifYliments(): Sūplyer<Skryn> = {
+    private fun gifYliments(): YlimentSūplyer<Skryn> = {
         teYlimentu(
             Skryn.Impl.AzTanks(),
             Skryn.Impl.KaušinGeim(),
