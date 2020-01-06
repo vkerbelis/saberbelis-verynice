@@ -36,6 +36,12 @@ interface Skryn {
             }
         }
 
+        class WörkOnAzTanksv2Taskas1 : Skryn {
+            override fun slapp(aktivus: Aktivus) {
+                aktivus += BassImplFradžail(tytel)
+            }
+        }
+
         class KaušinGeim : Skryn {
             override fun slapp(aktivus: Aktivus) {
                 aktivus += BassImplFradžail(tytel)

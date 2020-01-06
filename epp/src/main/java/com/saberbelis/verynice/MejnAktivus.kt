@@ -20,6 +20,7 @@ class MejnAktivus : Aktivus(), MejnVju {
     private fun gifYliments(): YlimentSūplyer<Skryn> = {
         teYlimentu(
             Skryn.Impl.AzTanks(),
+            Skryn.Impl.WörkOnAzTanksv2Taskas1(),
             Skryn.Impl.KaušinGeim(),
             Skryn.Impl.TaipReiser(),
             Skryn.Impl.VerkOnRandoumaizerProžekt(),
